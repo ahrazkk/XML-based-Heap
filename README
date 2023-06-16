@@ -1,0 +1,22 @@
+In your README file, you need to answer the following question:
+
+Another legal XML tag not used in this lab is the "stand-alone" tag. This kind of tag combines both a start tag and an end tag. It is identified with a '/' (slash) preceding the final >. (For example, the <foo/> is a stand-alone tag that is "self-balancing."
+
+Describe briefly how you would modify Requirement 1 to allow this tag.
+
+To add this into my code, I would honestly add another if statement at the end of my code stating whether the end has a slash before closing '>'; it would be under the first if statement, which is (pseudocode) if(<), so in my code right now there are 2 cases, where either case 1, the following line is a slash or case 2 the next line is a letter to determine if its open or closed tag. I would add another restriction in my while loop for the open tag statement where it also detects if '/' is seen. Once it is, it would go to an if statement, which would push the word given in the input and, right after, pop it to be both an open and closed tag.
+
+Errors in code:
+REQ2 has an error in the reverse order code where it isn't implemented correctly and sometimes switches/doesn't compare the left and right branches. Another thing I didn't fix in my head I know how to, but it wasn't clicking on paper was the closing node for the <node id>. Besides that no errors. Also, pop was not implemented, I had planned to implement it with heapDelete sending it functions to pop, but instead, I solved the entire thing in heap delete. My implementation of this was very different than others; I needed clarification on what the requirements were saying, so whatever I did understand and tried to reproduce the output given to us in the lab manual. I tried using all the void (function) files given to us without creating more since I didn't want to do something that wasn't stated in the requirements hence why my implementation was so different. It would have worked if I had just fixed my bugs. 
+
+
+
+
+
+I've also added all the notes I took to produce my codes for anyone to understand since I always forget to add comments to my code when I demo, I accidentally look at them, and they confuse me. The notes are in a file called "work done to solve the assignment."
+
+That said, my code is also very messy due to the amount of debugging and testing I had to do to see if the code was working, hence why many print statements are commented out.
+
+This lab helped me with many concepts I needed help understanding. My code differs from what should have been correct due to my knowledge of it and how I planned it. This lab made me understand XML tags implementation of stack and heap and numerous other functions in c, as well as rules and how code works. memset was a function I had recently learned (but also removed due to it not being needed), as well as setting an array ='/0' to make it null, which is used in my code but also isn't necessary since I used that when I had initially planned to use a 1d array for req1, also other things like detecting new line character, all of these things probably should have been commented on my code but once I've learned it I find it easier to answer questions on it from what I know then looking at the comments. I was prepared to answer any question that would have been asked in my demo.
+
+
